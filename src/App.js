@@ -13,20 +13,21 @@ import Dashboard from "./scenes/dashboard";
 // import Line from "./scenes/line";
 // import Pie from "./scenes/pie";
 // import FAQ from "./scenes/faq";
-// import Calender from "./scenes/calender";
+// import Calendar from "./scenes/calendar";
+// import Geography from "./scenes/geography";
 
 function App() {
   const [theme, colorMode] = useMode();
   return (<ColorModeContext.Provider value={colorMode}>
     <ThemeProvider theme={theme}>
-      <CssBaseline/>
+      <CssBaseline />
       <div className="app">
-        <Sidebar/>
+        <Sidebar />
         <main className='content'>
-          <Topbar/>
-         <Routes>
-         <Route path="/" element={<Dashboard/>}/>
-          {/* <Route path="/team" element={<Team/>}/>
+          <Topbar />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            {/* <Route path="/team" element={<Team/>}/>
           <Route path="/contacts" element={<Contacts/>}/>
           <Route path="/invoices" element={<Invoices/>}/>
           <Route path="/form" element={<Form/>}/>
@@ -35,8 +36,8 @@ function App() {
           <Route path="/line" element={<Line/>}/>
           <Route path="/faq" element={<FAQ/>}/>
           <Route path="/geography" element={<Geography/>}/>
-          <Route path="/calender" element={<Calendar/>}/> */}
-         </Routes>
+          <Route path="/calendar" element={<Calendar/>}/> */}
+          </Routes>
         </main>
       </div>
     </ThemeProvider>
